@@ -176,6 +176,9 @@ def enemy_randomshoot():  # ランダムに敵の弾が発射
 
 
 if __name__ == "__main__":
+
+    port=int(os.getenv("PORT",5000))
+    app.run(host="0.0.0.0",port=port)
     # 初期描画
     root = tk.Tk()
     root.title("invader")
